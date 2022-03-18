@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Published</_PublishTargetUrl>
+    <History>True|2022-01-12T01:55:39.2284257Z;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/UTTT.Ejemplo.Linq.Data.dll">
+      <publishTime>11/01/2022 19:51:00</publishTime>
+    </File>
+    <File Include="bin/UTTT.Ejemplo.Linq.Data.dll.config">
+      <publishTime>11/01/2022 19:50:16</publishTime>
+    </File>
+    <File Include="bin/UTTT.Ejemplo.Linq.Data.pdb">
+      <publishTime>11/01/2022 19:51:00</publishTime>
+    </File>
+    <File Include="bin/UTTT.Ejemplo.Persona.Control.dll">
+      <publishTime>05/01/2022 21:24:31</publishTime>
+    </File>
+    <File Include="bin/UTTT.Ejemplo.Persona.Control.pdb">
+      <publishTime>05/01/2022 21:24:31</publishTime>
+    </File>
+    <File Include="bin/UTTT.Ejemplo.Persona.Data.dll">
+      <publishTime>05/01/2022 21:24:28</publishTime>
+    </File>
+    <File Include="bin/UTTT.Ejemplo.Persona.Data.pdb">
+      <publishTime>05/01/2022 21:24:28</publishTime>
+    </File>
+    <File Include="bin/UTTT.Ejemplo.Persona.dll">
+      <publishTime>11/01/2022 19:55:33</publishTime>
+    </File>
+    <File Include="bin/UTTT.Ejemplo.Persona.pdb">
+      <publishTime>11/01/2022 19:55:33</publishTime>
+    </File>
+    <File Include="controlformato.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="direccion.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DireccionExtraManager.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="DireccionManager.aspx">
+      <publishTime>04/01/2022 17:19:20</publishTime>
+    </File>
+    <File Include="Images/delrecord_16x16.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/editrecord_16x16.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/Pixir-1-1-300x181.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Images/printrecord_16x16.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="javaScripFile.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="javaScripPage.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="paginaMaster.Master">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="PersonaManager.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="PersonaPrincipal.aspx">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1-vsdoc.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.1.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/01/2022 19:55:34</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

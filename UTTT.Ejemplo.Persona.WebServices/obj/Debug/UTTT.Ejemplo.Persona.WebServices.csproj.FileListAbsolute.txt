@@ -36,3 +36,16 @@ C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesio
 C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\obj\Debug\UTTT.Ejemplo.Persona.WebServices.csproj.CopyComplete
 C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\obj\Debug\UTTT.Ejemplo.Persona.WebServices.dll
 C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\obj\Debug\UTTT.Ejemplo.Persona.WebServices.pdb
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\bin\UTTT.Ejemplo.Persona.WebServices.dll.config
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\bin\UTTT.Ejemplo.Persona.WebServices.dll
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\bin\UTTT.Ejemplo.Persona.WebServices.pdb
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\bin\UTTT.Ejemplo.Linq.Data.dll
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\bin\UTTT.Ejemplo.Persona.Data.dll
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\bin\UTTT.Ejemplo.Linq.Data.pdb
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\bin\UTTT.Ejemplo.Linq.Data.dll.config
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\bin\UTTT.Ejemplo.Persona.Data.pdb
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\obj\Debug\UTTT.Ejemplo.Persona.WebServices.csproj.AssemblyReference.cache
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\obj\Debug\UTTT.Ejemplo.Persona.WebServices.csproj.CoreCompileInputs.cache
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\obj\Debug\UTTT.Ejemplo.Persona.WebServices.csproj.CopyComplete
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\obj\Debug\UTTT.Ejemplo.Persona.WebServices.dll
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona.WebServices\obj\Debug\UTTT.Ejemplo.Persona.WebServices.pdb

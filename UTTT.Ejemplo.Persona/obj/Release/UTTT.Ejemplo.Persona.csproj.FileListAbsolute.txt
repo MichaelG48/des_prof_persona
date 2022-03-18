@@ -24,3 +24,33 @@ C:\SVN\UTTT.Ejemplo.Persona\trunk\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.
 C:\SVN\UTTT.Ejemplo.Persona\trunk\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.csproj.CopyComplete
 C:\SVN\UTTT.Ejemplo.Persona\trunk\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.dll
 C:\SVN\UTTT.Ejemplo.Persona\trunk\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.pdb
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.dll.config
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.dll
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.pdb
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Linq.Data.dll
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.Control.dll
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.Data.dll
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Linq.Data.pdb
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Linq.Data.dll.config
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.Control.pdb
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.Data.pdb
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.csproj.AssemblyReference.cache
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.csproj.CoreCompileInputs.cache
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.csproj.CopyComplete
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.dll
+C:\Users\MichaelGonzalez\Documents\2021\UTTTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.pdb
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.dll.config
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.dll
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.pdb
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Linq.Data.dll
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.Control.dll
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.Data.dll
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Linq.Data.pdb
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Linq.Data.dll.config
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.Control.pdb
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\UTTT.Ejemplo.Persona.Data.pdb
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.csproj.AssemblyReference.cache
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.csproj.CoreCompileInputs.cache
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.csproj.CopyComplete
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.dll
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.pdb

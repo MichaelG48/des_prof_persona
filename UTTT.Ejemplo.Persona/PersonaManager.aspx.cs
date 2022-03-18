@@ -12,6 +12,7 @@ using System.Linq.Expressions;
 using System.Collections;
 using UTTT.Ejemplo.Persona.Control;
 using UTTT.Ejemplo.Persona.Control.Ctrl;
+using System.Net.Mail;
 
 #endregion
 
@@ -56,21 +57,21 @@ namespace UTTT.Ejemplo.Persona
                     {
                         this.session.Parametros.Add("baseEntity", this.baseEntity);
                     }
-                    List<CatSexo> lista = dcGlobal.GetTable<CatSexo>().ToList();
-                    CatSexo catTemp = new CatSexo();
-                    catTemp.id = -1;
-                    catTemp.strValor = "Seleccionar";
-                    lista.Insert(0, catTemp);
+                    List<CatSexo> lista = dcGlobal.GetTable<CatSexo>().ToList();                  
                     this.ddlSexo.DataTextField = "strValor";
                     this.ddlSexo.DataValueField = "id";
-                    this.ddlSexo.DataSource = lista;
-                    this.ddlSexo.DataBind();
-
-                    this.ddlSexo.SelectedIndexChanged += new EventHandler(ddlSexo_SelectedIndexChanged);
-                    this.ddlSexo.AutoPostBack = true;
+                    
                     if (this.idPersona == 0)
                     {
                         this.lblAccion.Text = "Agregar";
+                        //CalendarExtender1.SelectedDate = DateTime.Now;
+
+                        CatSexo catTemp = new CatSexo();
+                        catTemp.id = -1;
+                        catTemp.strValor = "Seleccionar";
+                        lista.Insert(0, catTemp);
+                        this.ddlSexo.DataSource = lista;
+                        this.ddlSexo.DataBind();
                     }
                     else
                     {
@@ -79,6 +80,12 @@ namespace UTTT.Ejemplo.Persona
                         this.txtAPaterno.Text = this.baseEntity.strAPaterno;
                         this.txtAMaterno.Text = this.baseEntity.strAMaterno;
                         this.txtClaveUnica.Text = this.baseEntity.strClaveUnica;
+                        this.txtCurp.Text = this.baseEntity.strCurp;
+
+                        //CalendarExtender1.SelectedDate = this.baseEntity.dteFechaNacimiento.Value.Date;
+
+                        this.ddlSexo.DataSource = lista;
+                        this.ddlSexo.DataBind();
                         this.setItem(ref this.ddlSexo, baseEntity.CatSexo.strValor);
                     }                
                 }
@@ -96,6 +103,29 @@ namespace UTTT.Ejemplo.Persona
         {
             try
             {
+                rfvSexo.Validate();
+                rfvClave.Validate();
+                rfvNombre.Validate();
+                rfvApellidoM.Validate();
+                rfvApellidoP.Validate();
+                rfvCurp.Validate();
+
+                rvClaveUnica.Validate();
+                revNombre.Validate();
+                revAMaterno.Validate();
+                revAPaterno.Validate();
+
+
+                //txtNombre.Validate();
+                //revAPaterno.Validate();
+                //revAMaterno.Validate();
+                //revCURP.Validate();
+                //rfvNombre.Validate();
+                //rfvAPaterno.Validate();
+                //rfvAMaterno.Validate();
+                //rfvCurp.Validate();
+
+                //Response.Redirect("");
                 DataContext dcGuardar = new DcGeneralDataContext();
                 UTTT.Ejemplo.Linq.Data.Entity.Persona persona = new Linq.Data.Entity.Persona();
                 if (this.idPersona == 0)
@@ -104,6 +134,8 @@ namespace UTTT.Ejemplo.Persona
                     persona.strNombre = this.txtNombre.Text.Trim();
                     persona.strAMaterno = this.txtAMaterno.Text.Trim();
                     persona.strAPaterno = this.txtAPaterno.Text.Trim();
+                    persona.strCurp = this.txtCurp.Text.Trim();
+
                     persona.idCatSexo = int.Parse(this.ddlSexo.Text);
                     dcGuardar.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().InsertOnSubmit(persona);
                     dcGuardar.SubmitChanges();
@@ -119,6 +151,16 @@ namespace UTTT.Ejemplo.Persona
                     persona.strAMaterno = this.txtAMaterno.Text.Trim();
                     persona.strAPaterno = this.txtAPaterno.Text.Trim();
                     persona.idCatSexo = int.Parse(this.ddlSexo.Text);
+
+                    String mensaje = String.Empty;
+                    if (!this.validateInputs(persona, ref mensaje))
+                    {
+                        this.lblMessage.Text = mensaje;
+                        this.lblMessage.Visible = true;
+                        return;
+                    }
+
+
                     dcGuardar.SubmitChanges();
                     this.showMessage("El registro se edito correctamente.");
                     this.Response.Redirect("~/PersonaPrincipal.aspx", false);
@@ -179,6 +221,93 @@ namespace UTTT.Ejemplo.Persona
             _control.Items.FindByText(_value).Selected = true;
         }
 
+        public bool validateInputs(UTTT.Ejemplo.Linq.Data.Entity.Persona _persona, ref String _mensaje)
+        {
+            if (_persona.idCatSexo == -1)
+            {
+                _mensaje = "Seleccione Masculino o Femenino";
+                return false;
+            }
+            int i = 0;
+            if (int.TryParse(_persona.strClaveUnica, out i) == false)
+            {
+                _mensaje = "La Clave Unica no es un número";
+                return false;
+            }
+            if (int.Parse(_persona.strClaveUnica) < 100 || int.Parse(_persona.strClaveUnica) > 999)
+            {
+                _mensaje = "La Clave Unica esta fuera de rango";
+                return false;
+            }
+            if (_persona.strNombre.Equals(String.Empty))
+            {
+                _mensaje = "Debe capturar el nombre";
+                return false;
+            }
+            if (_persona.strNombre.Length > 50)
+            {
+                _mensaje = "Los caracteres permitidos para nombre rebasan lo establecido de 50";
+                return false;
+            }
+            if (_persona.strNombre.Length < 3)
+            {
+                _mensaje = "El nombre no es válido";
+                return false;
+            }
+
+            if (_persona.strAPaterno.Equals(String.Empty))
+            {
+                _mensaje = "Debe capturar el apellido paterno";
+                return false;
+            }
+
+            if (_persona.strAPaterno.Length > 50)
+            {
+                _mensaje = "Los caracteres permitidos para nombre rebasan lo establecido de 50 para el apellido paterno";
+                return false;
+            }
+            if (_persona.strAPaterno.Length < 3)
+            {
+                _mensaje = "El apellido paterno no  es  válido";
+                return false;
+            }
+            if (_persona.strAMaterno.Equals(String.Empty))
+            {
+                _mensaje = "Debe capturar el apellido materno";
+                return false;
+            }
+
+            if (_persona.strAMaterno.Length > 50)
+            {
+                _mensaje = "Los caracteres permitidos para nombre rebasan lo establecido de 50 para A Materno";
+                return false;
+            }
+            if (_persona.strAMaterno.Length < 3)
+            {
+                _mensaje = "El apellido materno no es válido";
+                return false;
+            }
+            if (_persona.strCurp.Equals(String.Empty))
+            {
+                _mensaje = "Debe capturar la CURP";
+                return false;
+            }
+
+            if (_persona.strCurp.Length > 50)
+            {
+                _mensaje = "Los caracteres permitidos para Curp rebasan lo establecido de 50";
+                return false;
+            }
+            if (_persona.strCurp.Length < 18)
+            {
+                _mensaje = "Ingrese una CURP de 18 dígitos";
+                return false;
+            }
+            return true;
+
+        }
+
+        
         #endregion
     }
 }

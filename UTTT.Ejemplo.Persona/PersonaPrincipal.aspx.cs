@@ -1,14 +1,12 @@
 ﻿#region Using
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Data.Linq;
 using System.Linq;
-using System.Web;
-using System.Web.UI;
+using System.Linq.Expressions;
 using System.Web.UI.WebControls;
 using UTTT.Ejemplo.Linq.Data.Entity;
-using System.Data.Linq;
-using System.Linq.Expressions;
-using System.Collections;
 using UTTT.Ejemplo.Persona.Control;
 using UTTT.Ejemplo.Persona.Control.Ctrl;
 
@@ -166,12 +164,31 @@ namespace UTTT.Ejemplo.Persona
         {
             try
             {
+                //DataContext dcDelete = new DcGeneralDataContext();
+                //var dcPersona =
+                //        from persona in dcDelete.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>()
+                //        where persona.id == _idPersona
+                //        select persona;
+                //foreach (var _persona in dcPersona)
+                //{
+                //    dcDelete.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().DeleteOnSubmit(_persona);
+                //}
+                //dcDelete.SubmitChanges();
+
                 DataContext dcDelete = new DcGeneralDataContext();
-                UTTT.Ejemplo.Linq.Data.Entity.Persona persona = dcDelete.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().First(
-                    c => c.id == _idPersona);
+                UTTT.Ejemplo.Linq.Data.Entity.Persona persona =
+                    dcDelete.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().First(c => c.id == _idPersona);
+                dcDelete.GetTable<Direccion>().DeleteAllOnSubmit(persona.Direccion);
                 dcDelete.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().DeleteOnSubmit(persona);
                 dcDelete.SubmitChanges();
-                this.showMessage("El registro se agrego correctamente.");
+                dcDelete.Dispose();
+
+                //DataContext dcDelete = new DcGeneralDataContext();
+                //UTTT.Ejemplo.Linq.Data.Entity.Persona persona = dcDelete.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().First(
+                //    c => c.id == _idPersona);
+                //dcDelete.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().DeleteOnSubmit(persona);
+                //dcDelete.SubmitChanges();
+                this.showMessage("El registro se eliminó correctamente.");
                 this.DataSourcePersona.RaiseViewChanged();                
             }
             catch (Exception _e)

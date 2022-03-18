@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Persona" Class="DcGeneralDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=CX-CORP04\MSSQLSERVER12;Initial Catalog=Persona;Persist Security Info=True;User ID=sa" SettingsObjectName="UTTT.Ejemplo.Linq.Data.Properties.Settings" SettingsPropertyName="PersonaConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-ART4CME\SQLEXPRESS;Initial Catalog=Persona;Integrated Security=True;Persist Security Info=True" SettingsObjectName="UTTT.Ejemplo.Linq.Data.Properties.Settings" SettingsPropertyName="PersonaConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Persona" Member="Persona">
     <Type Name="Persona">
       <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
@@ -8,6 +8,8 @@
       <Column Name="strAPaterno" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="strAMaterno" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="idCatSexo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="strCurp" Type="System.String" CanBeNull="false" />
+      <Column Member="dteFechaNacimiento" Type="System.String" CanBeNull="false" />
       <Association Name="Persona_Direccion" Member="Direccion" ThisKey="id" OtherKey="idPersona" Type="Direccion" />
       <Association Name="CatSexo_Persona" Member="CatSexo" ThisKey="idCatSexo" OtherKey="id" Type="CatSexo" IsForeignKey="true" />
     </Type>

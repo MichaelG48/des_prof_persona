@@ -51,6 +51,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataPersona.dbml</DependentUpon>
     </Compile>
+    <Compile Include="Entity\DcGeneral.cs">
+      <DependentUpon>DcGeneral.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Entity\DcGeneral.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

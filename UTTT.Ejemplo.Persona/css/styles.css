@@ -1,0 +1,287 @@
+﻿body {
+    /*background-color: white;*/
+}
+
+.flex-container {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-container-message {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box-btn{
+
+}
+.page-title {
+    text-align: center;
+}
+
+#lblAccion {
+    display: block;
+    position: relative;
+}
+
+span {
+    position: absolute;
+}
+
+#boxMessage {
+    display: none;
+    margin: 1%;
+}
+
+form {
+    width: 50%;
+}
+
+label {
+    width: 100%;
+    margin: 0 !important;
+    text-align: center;
+    color: transparent;
+}
+
+input, select {
+    border: solid 1px #EEEEEE;
+    padding: 2%;
+    min-height: 35px;
+    margin-bottom: 3%;
+    width: 50%;
+    font-size: 15px;
+}
+
+    input[type=submit] {
+        margin: 1% 5%;
+    }
+
+/*@media screen and (min-width: 1200px) {
+            body{
+                background-color: red;
+            } 
+            .flex-container{
+                height: 70%;
+            }
+            .flex-container-message{
+                bottom: 30%;
+            }
+            #boxMessage {
+                padding: 2% 6%;
+            }
+            .flex-container-message #boxMessage p {
+                font-size: 32px;
+            }
+            .h2, h2 {
+                font-size: 4rem;
+            }
+            #lblAccion {
+                font-size: 30px;
+            }
+            form{
+                width: 80% !important;
+            }
+            
+            input, select {
+                width: 80%;
+                font-size: 35px;
+            }
+            label {
+                font-size: 35px;
+            }
+        }*/
+@media only screen and (min-width: 300px) {
+
+    body {
+    }
+
+    form {
+        width: 100% !important;
+    }
+
+    input, select {
+        width: 100%;
+        font-size: 30px;
+    }
+
+    .h2, h2 {
+        font-size: 3rem;
+    }
+
+    #lblAccion {
+        font-size: 30px;
+    }
+    .flex-box-btn {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+
+    body {
+    }
+
+    form {
+        width: 100% !important;
+    }
+
+    input, select {
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .h2, h2 {
+        font-size: 3rem;
+    }
+
+    #lblAccion {
+        font-size: 30px;
+    }
+}
+
+@@media screen and (min-width: 600px) {
+
+    body {
+        background-color:red;
+    }
+
+    form {
+        width: 80% !important;
+    }
+
+    input, select {
+        width: 75%;
+        font-size: 20px;
+    }
+
+    .h2, h2 {
+        font-size: 3rem !important;
+    }
+
+    #lblAccion {
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (min-width: 900px) {
+
+    body {
+    }
+
+    form {
+        width: 80%;
+    }
+
+    input, select {
+        width: 60%;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+    }
+
+    .h2, h2 {
+        font-size: 2rem !important;
+    }
+
+    #lblAccion {
+        font-size: 15px !important;
+    }
+
+    .flex-container {
+        display: flex;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex-container-message {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        z-index: 1;
+    }
+
+    .flex-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .page-title {
+        text-align: center;
+    }
+
+    #lblAccion {
+        display: block;
+        position: relative;
+    }
+
+    span {
+        position: absolute;
+    }
+
+    #boxMessage {
+        display: none;
+        margin: 1%;
+    }
+
+    form {
+        width: 50% !important;
+    }
+
+    label {
+        width: 100%;
+        margin: 0 !important;
+        text-align: center;
+        color: transparent;
+    }
+
+    input, select {
+        border: solid 1px #EEEEEE;
+        padding: 2%;
+        min-height: 35px;
+        margin-bottom: 3%;
+        width: 50% !important;
+        font-size: 15px !important;
+    }
+
+        input[type=submit] {
+            margin: 1% 5%;
+        }
+}

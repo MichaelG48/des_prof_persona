@@ -116,7 +116,7 @@ namespace UTTT.Ejemplo.Linq.Data.Entity
 		
 		private string _strCurp;
 		
-		private string _dteFechaNacimiento;
+		private string _dteFechaNac;
 		
 		private EntitySet<Direccion> _Direccion;
 		
@@ -140,8 +140,8 @@ namespace UTTT.Ejemplo.Linq.Data.Entity
     partial void OnidCatSexoChanged();
     partial void OnstrCurpChanging(string value);
     partial void OnstrCurpChanged();
-    partial void OndteFechaNacimientoChanging(string value);
-    partial void OndteFechaNacimientoChanged();
+    partial void OndteFechaNacChanging(string value);
+    partial void OndteFechaNacChanged();
     #endregion
 		
 		public Persona()
@@ -295,22 +295,22 @@ namespace UTTT.Ejemplo.Linq.Data.Entity
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_dteFechaNacimiento", CanBeNull=false)]
-		public string dteFechaNacimiento
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_dteFechaNac")]
+		public string dteFechaNac
 		{
 			get
 			{
-				return this._dteFechaNacimiento;
+				return this._dteFechaNac;
 			}
 			set
 			{
-				if ((this._dteFechaNacimiento != value))
+				if ((this._dteFechaNac != value))
 				{
-					this.OndteFechaNacimientoChanging(value);
+					this.OndteFechaNacChanging(value);
 					this.SendPropertyChanging();
-					this._dteFechaNacimiento = value;
-					this.SendPropertyChanged("dteFechaNacimiento");
-					this.OndteFechaNacimientoChanged();
+					this._dteFechaNac = value;
+					this.SendPropertyChanged("dteFechaNac");
+					this.OndteFechaNacChanged();
 				}
 			}
 		}

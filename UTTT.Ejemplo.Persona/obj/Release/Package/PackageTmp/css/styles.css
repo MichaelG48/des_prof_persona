@@ -3,14 +3,24 @@
 }
 
 .flex-container {
-    display: flex;
+    /*display: flex;
     height: 100%;
     position: absolute;
     width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;*/
+
+    display: flex;
+    /* height: 100%; */
+    /* position: absolute; */
+    width: 100%;
+    /* align-items: center; */
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
 }
 
 .flex-container-message {
@@ -24,16 +34,52 @@
     z-index: 1;
 }
 
-.flex-box {
+.flex-group-searh, .flex-group-select {
+    padding: 15px 0;
     display: flex;
     flex-direction: row;
+}
+
+.flex-group-searh input, .flex-group-select input{
+
+}
+
+.flex-box {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    justify-content: center;
+    /*width: 50%;*/
+    align-items: center;
+}
+
+.flex-content-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+}
+
+.flex-group-select label{
+    color: black !important;
+}
+
+.flex-box-btn {
+    display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 
-.flex-box-btn{
-
+.flex-box-btn input {
+    margin: 1% 5%;
 }
+
+.flex-box-date {
+    display: flex;
+    flex-direction: row;
+}
+
 .page-title {
     text-align: center;
 }
@@ -41,10 +87,12 @@
 #lblAccion {
     display: block;
     position: relative;
+    right: 0!important;
 }
 
 span {
     position: absolute;
+    right: 60%;
 }
 
 #boxMessage {
@@ -53,7 +101,16 @@ span {
 }
 
 form {
-    width: 50%;
+    width: 100%;
+}
+
+.flex-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 label {
@@ -63,224 +120,33 @@ label {
     color: transparent;
 }
 
+.select{
+    width: 50% !important;
+}
+.select select{
+    width: 100% !important;
+}
+
 input, select {
     border: solid 1px #EEEEEE;
-    padding: 2%;
-    min-height: 35px;
+    padding: 5px;
+    min-height: 40px !important;
+    height: 40px;
     margin-bottom: 3%;
-    width: 50%;
-    font-size: 15px;
 }
 
-    input[type=submit] {
-        margin: 1% 5%;
-    }
-
-/*@media screen and (min-width: 1200px) {
-            body{
-                background-color: red;
-            } 
-            .flex-container{
-                height: 70%;
-            }
-            .flex-container-message{
-                bottom: 30%;
-            }
-            #boxMessage {
-                padding: 2% 6%;
-            }
-            .flex-container-message #boxMessage p {
-                font-size: 32px;
-            }
-            .h2, h2 {
-                font-size: 4rem;
-            }
-            #lblAccion {
-                font-size: 30px;
-            }
-            form{
-                width: 80% !important;
-            }
-            
-            input, select {
-                width: 80%;
-                font-size: 35px;
-            }
-            label {
-                font-size: 35px;
-            }
-        }*/
-@media only screen and (min-width: 300px) {
-
-    body {
-    }
-
-    form {
-        width: 100% !important;
-    }
-
-    input, select {
-        width: 100%;
-        font-size: 30px;
-    }
-
-    .h2, h2 {
-        font-size: 3rem;
-    }
-
-    #lblAccion {
-        font-size: 30px;
-    }
-    .flex-box-btn {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
+input[type=submit] {
+        
 }
 
-@media only screen and (min-width: 400px) {
-
-    body {
-    }
-
-    form {
-        width: 100% !important;
-    }
-
-    input, select {
-        width: 90%;
-        font-size: 20px;
-    }
-
-    .h2, h2 {
-        font-size: 3rem;
-    }
-
-    #lblAccion {
-        font-size: 30px;
-    }
+#btnAgregar, #btnAceptar {
+    background-color: black;
+    color: white;
 }
 
-@media screen and (min-width: 600px) {
-
-    body {
-    }
-
-    form {
-        width: 80% !important;
-    }
-
-    input, select {
-        width: 75%;
-        font-size: 20px;
-    }
-
-    .h2, h2 {
-        font-size: 3rem !important;
-    }
-
-    #lblAccion {
-        font-size: 30px !important;
-    }
+#btnBuscar:hover, #btnCancelar:hover {
+    background-color: #E8EDEC;
 }
-
-@media screen and (min-width: 900px) {
-
-    body {
-    }
-
-    form {
-        width: 80%;
-    }
-
-    input, select {
-        width: 60%;
-        font-size: 20px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-
-    body {
-    }
-
-    .h2, h2 {
-        font-size: 2rem !important;
-    }
-
-    #lblAccion {
-        font-size: 15px !important;
-    }
-
-    .flex-container {
-        display: flex;
-        height: 100%;
-        position: absolute;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .flex-container-message {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: nowrap;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-        z-index: 1;
-    }
-
-    .flex-box {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .page-title {
-        text-align: center;
-    }
-
-    #lblAccion {
-        display: block;
-        position: relative;
-    }
-
-    span {
-        position: absolute;
-    }
-
-    #boxMessage {
-        display: none;
-        margin: 1%;
-    }
-
-    form {
-        width: 50% !important;
-    }
-
-    label {
-        width: 100%;
-        margin: 0 !important;
-        text-align: center;
-        color: transparent;
-    }
-
-    input, select {
-        border: solid 1px #EEEEEE;
-        padding: 2%;
-        min-height: 35px;
-        margin-bottom: 3%;
-        width: 50% !important;
-        font-size: 15px !important;
-    }
-
-        input[type=submit] {
-            margin: 1% 5%;
-        }
+#btnAgregar:hover, #btnAceptar:hover {
+    background-color: #332E33;
 }

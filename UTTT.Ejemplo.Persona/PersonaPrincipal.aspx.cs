@@ -105,7 +105,7 @@ namespace UTTT.Ejemplo.Persona
 
                 List<UTTT.Ejemplo.Linq.Data.Entity.Persona> listaPersona =
                     dcConsulta.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().Where(predicate).ToList();
-                e.Result = listaPersona;        
+                e.Result = listaPersona;
             }
             catch (Exception _e)
             {
@@ -152,7 +152,6 @@ namespace UTTT.Ejemplo.Persona
                 this.session.Pantalla = String.Empty;
                 this.session.Pantalla = "~/PersonaManager.aspx";
                 this.Response.Redirect(this.session.Pantalla, false);
-
             }
             catch (Exception _e)
             {

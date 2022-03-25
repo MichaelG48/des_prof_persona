@@ -13,6 +13,7 @@ using System.Collections;
 using UTTT.Ejemplo.Persona.Control;
 using UTTT.Ejemplo.Persona.Control.Ctrl;
 using System.Net.Mail;
+using System.Globalization;
 
 #endregion
 
@@ -82,7 +83,7 @@ namespace UTTT.Ejemplo.Persona
                         this.txtClaveUnica.Text = this.baseEntity.strClaveUnica;
                         this.txtCurp.Text = this.baseEntity.strCurp;
 
-                        //CalendarExtender1.SelectedDate = this.baseEntity.dteFechaNacimiento.Value.Date;
+                        calendarextender1.SelectedDate = Convert.ToDateTime(this.baseEntity.dteFechaNac);
 
                         this.ddlSexo.DataSource = lista;
                         this.ddlSexo.DataBind();
@@ -103,29 +104,18 @@ namespace UTTT.Ejemplo.Persona
         {
             try
             {
-                rfvSexo.Validate();
-                rfvClave.Validate();
-                rfvNombre.Validate();
-                rfvApellidoM.Validate();
-                rfvApellidoP.Validate();
-                rfvCurp.Validate();
-
-                rvClaveUnica.Validate();
-                revNombre.Validate();
-                revAMaterno.Validate();
-                revAPaterno.Validate();
-
-
-                //txtNombre.Validate();
-                //revAPaterno.Validate();
-                //revAMaterno.Validate();
-                //revCURP.Validate();
+                //rfvSexo.Validate();
+                //rfvClave.Validate();
                 //rfvNombre.Validate();
-                //rfvAPaterno.Validate();
-                //rfvAMaterno.Validate();
+                //rfvApellidoM.Validate();
+                //rfvApellidoP.Validate();
                 //rfvCurp.Validate();
 
-                //Response.Redirect("");
+                //rvClaveUnica.Validate();
+                //revNombre.Validate();
+                //revAMaterno.Validate();
+                //revAPaterno.Validate();
+
                 DataContext dcGuardar = new DcGeneralDataContext();
                 UTTT.Ejemplo.Linq.Data.Entity.Persona persona = new Linq.Data.Entity.Persona();
                 if (this.idPersona == 0)
@@ -135,22 +125,11 @@ namespace UTTT.Ejemplo.Persona
                     persona.strAMaterno = this.txtAMaterno.Text.Trim();
                     persona.strAPaterno = this.txtAPaterno.Text.Trim();
                     persona.strCurp = this.txtCurp.Text.Trim();
+                    persona.idCatSexo = int.Parse(this.ddlSexo.Text);
 
-                    persona.idCatSexo = int.Parse(this.ddlSexo.Text);
-                    dcGuardar.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().InsertOnSubmit(persona);
-                    dcGuardar.SubmitChanges();
-                    this.showMessage("El registro se agrego correctamente.");
-                    this.Response.Redirect("~/PersonaPrincipal.aspx", false);
-                    
-                }
-                if (this.idPersona > 0)
-                {
-                    persona = dcGuardar.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().First(c => c.id == idPersona);
-                    persona.strClaveUnica = this.txtClaveUnica.Text.Trim();
-                    persona.strNombre = this.txtNombre.Text.Trim();
-                    persona.strAMaterno = this.txtAMaterno.Text.Trim();
-                    persona.strAPaterno = this.txtAPaterno.Text.Trim();
-                    persona.idCatSexo = int.Parse(this.ddlSexo.Text);
+                    string date = Request.Form[this.txtfechanacimiento.UniqueID];
+
+                    persona.dteFechaNac = Request.Form[this.txtfechanacimiento.UniqueID];
 
                     String mensaje = String.Empty;
                     if (!this.validateInputs(persona, ref mensaje))
@@ -160,9 +139,38 @@ namespace UTTT.Ejemplo.Persona
                         return;
                     }
 
+                    dcGuardar.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>().InsertOnSubmit(persona);
+                    dcGuardar.SubmitChanges();
+                    this.showMessage("El registro se agregó correctamente.");
+                    this.Response.Redirect("~/PersonaPrincipal.aspx", false);
+                }
+                if (this.idPersona > 0)
+                {
+                    var personaUpdate = (from Persona in dcGuardar.GetTable<UTTT.Ejemplo.Linq.Data.Entity.Persona>()
+                                 where Persona.id == idPersona
+                                 select Persona).FirstOrDefault();
+
+                    personaUpdate.strClaveUnica = this.txtClaveUnica.Text.Trim();
+                    personaUpdate.strNombre = this.txtNombre.Text.Trim();
+                    personaUpdate.strAMaterno = this.txtAMaterno.Text.Trim();
+                    personaUpdate.strAPaterno = this.txtAPaterno.Text.Trim();
+                    personaUpdate.strCurp = this.txtCurp.Text.Trim();
+                    personaUpdate.idCatSexo = int.Parse(this.ddlSexo.Text);
+
+                    string date = Request.Form[this.txtfechanacimiento.UniqueID];
+
+                    personaUpdate.dteFechaNac = Request.Form[this.txtfechanacimiento.UniqueID];
+
+                    String mensaje = String.Empty;
+                    if (!this.validateInputs(personaUpdate, ref mensaje))
+                    {
+                        this.lblMessage.Text = mensaje;
+                        this.lblMessage.Visible = true;
+                        return;
+                    }
 
                     dcGuardar.SubmitChanges();
-                    this.showMessage("El registro se edito correctamente.");
+                    this.showMessage("El registro se editó correctamente.");
                     this.Response.Redirect("~/PersonaPrincipal.aspx", false);
                 }
             }
@@ -171,7 +179,7 @@ namespace UTTT.Ejemplo.Persona
                 this.showMessageException(_e.Message);
             }
         }
-
+        
         protected void btnCancelar_Click(object sender, EventArgs e)
         {
             try
@@ -236,7 +244,7 @@ namespace UTTT.Ejemplo.Persona
             }
             if (int.Parse(_persona.strClaveUnica) < 100 || int.Parse(_persona.strClaveUnica) > 999)
             {
-                _mensaje = "La Clave Unica esta fuera de rango";
+                _mensaje = "La Clave Unica debe ser un número entre 100 y 999";
                 return false;
             }
             if (_persona.strNombre.Equals(String.Empty))

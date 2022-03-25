@@ -20,8 +20,17 @@ namespace UTTT.Ejemplo.Persona.Control.Ctrl
 
         public static void showMessageException(this System.Web.UI.Page _page, String _message)
         {
-            SendEmail("michael_glz48@outlook.es", _message);
-            String mensaje = "Error de tipo " + _message + ". Ponerse en contacto con su administrador de sistema";
+            string excepEmailMessage = "";
+            try
+            {
+                SendEmail("michael_glz48@outlook.es", _message);
+            }
+            catch (Exception _e)
+            {
+                excepEmailMessage = _e.Message;
+            }
+
+            String mensaje = "Error de tipo " + _message + ". Ponerse en contacto con su administrador de sistema</br>"+ excepEmailMessage;
             _page.ClientScript.RegisterStartupScript(_page.GetType(),
                    "ClientScript",
                    "<SCRIPT>alert( '" + mensaje + "');</SCRIPT>");
@@ -29,21 +38,22 @@ namespace UTTT.Ejemplo.Persona.Control.Ctrl
 
         private static void SendEmail(string EmailDestino, string exepMesssage)
         {
-            string EmailOrigen = "michael.gonzalez1205@gmail.com";
-            string Contrasena = "@Michael.48";
-            MailMessage oMailMessage = new MailMessage(EmailOrigen, EmailDestino, "Exception Error",
-                "<p>An error has ocurred in <a href='http://dw-prof.somee.com/PersonaPrincipal.aspx'>http://dw-prof.somee.com</a> </p><br>Details:<br>" + exepMesssage);
+                string EmailOrigen = "michael.gonzalez1205@gmail.com";
+                string Contrasena = "@Gonzalez.12?";
+                MailMessage oMailMessage = new MailMessage(EmailOrigen, EmailDestino, "Exception Error",
+                    "<p>An error has ocurred in <a href='http://dw-prof.somee.com/PersonaPrincipal.aspx'>http://dw-prof.somee.com</a> </p><br>Details:<br>" + exepMesssage);
 
-            oMailMessage.IsBodyHtml = true;
+                oMailMessage.IsBodyHtml = true;
 
-            SmtpClient oSmtpClient = new SmtpClient("smtp.gmail.com");
-            oSmtpClient.EnableSsl = true;
-            oSmtpClient.UseDefaultCredentials = false;
-            oSmtpClient.Port = 587;
-            oSmtpClient.Credentials = new System.Net.NetworkCredential(EmailOrigen, Contrasena);
+                SmtpClient oSmtpClient = new SmtpClient("smtp.gmail.com");
+                oSmtpClient.EnableSsl = true;
+                oSmtpClient.UseDefaultCredentials = false;
+                oSmtpClient.Port = 587;
+                oSmtpClient.Credentials = new System.Net.NetworkCredential(EmailOrigen, Contrasena);
 
-            oSmtpClient.Send(oMailMessage);
-            oSmtpClient.Dispose();
+                oSmtpClient.Send(oMailMessage);
+                oSmtpClient.Dispose();
+            
         }
     }
 }

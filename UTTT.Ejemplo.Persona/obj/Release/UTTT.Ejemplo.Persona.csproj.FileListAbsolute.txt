@@ -54,3 +54,4 @@ C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Man
 C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.csproj.CopyComplete
 C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.dll
 C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\obj\Release\UTTT.Ejemplo.Persona.pdb
+C:\Users\MichaelGonzalez\Documents\UTTT\8vo\repos\Desarrollo Web Profesional\Manuales\Manual\UTTT.Ejemplo.Persona\UTTT.Ejemplo.Persona\bin\AjaxControlToolkit.dll

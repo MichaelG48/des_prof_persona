@@ -93,6 +93,7 @@
     <Content Include="direccion.aspx" />
     <Content Include="DireccionExtraManager.aspx" />
     <Content Include="DireccionManager.aspx" />
+    <Content Include="Error.aspx" />
     <Content Include="Images\delrecord_16x16.png" />
     <Content Include="Images\editrecord_16x16.png" />
     <Content Include="Images\Pixir-1-1-300x181.png" />
@@ -156,6 +157,7 @@
     <Content Include="Scripts\src\modifiers\offset.js" />
     <Content Include="Scripts\src\modifiers\preventOverflow.js" />
     <Content Include="Scripts\src\modifiers\shift.js" />
+    <Content Include="Scripts\src\scripts.js" />
     <Content Include="Scripts\src\utils\clockwise.js" />
     <Content Include="Scripts\src\utils\computeAutoPlacement.js" />
     <Content Include="Scripts\src\utils\debounce.js" />
@@ -228,56 +230,54 @@
   <ItemGroup>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="direccion.aspx.cs">
       <DependentUpon>direccion.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="direccion.aspx.designer.cs">
       <DependentUpon>direccion.aspx</DependentUpon>
     </Compile>
     <Compile Include="DireccionExtraManager.aspx.cs">
       <DependentUpon>DireccionExtraManager.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DireccionExtraManager.aspx.designer.cs">
       <DependentUpon>DireccionExtraManager.aspx</DependentUpon>
     </Compile>
     <Compile Include="DireccionManager.aspx.cs">
       <DependentUpon>DireccionManager.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DireccionManager.aspx.designer.cs">
       <DependentUpon>DireccionManager.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
     <Compile Include="javaScripPage.aspx.cs">
       <DependentUpon>javaScripPage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="javaScripPage.aspx.designer.cs">
       <DependentUpon>javaScripPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="paginaMaster.Master.cs">
       <DependentUpon>paginaMaster.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="paginaMaster.Master.designer.cs">
       <DependentUpon>paginaMaster.Master</DependentUpon>
     </Compile>
     <Compile Include="PersonaManager.aspx.cs">
       <DependentUpon>PersonaManager.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="PersonaManager.aspx.designer.cs">
       <DependentUpon>PersonaManager.aspx</DependentUpon>
     </Compile>
     <Compile Include="PersonaPrincipal.aspx.cs">
       <DependentUpon>PersonaPrincipal.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="PersonaPrincipal.aspx.designer.cs">
       <DependentUpon>PersonaPrincipal.aspx</DependentUpon>

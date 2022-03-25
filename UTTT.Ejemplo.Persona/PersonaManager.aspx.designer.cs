@@ -204,6 +204,42 @@ namespace UTTT.Ejemplo.Persona
         protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvCurp;
 
         /// <summary>
+        /// Control txtfechanacimiento.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtfechanacimiento;
+
+        /// <summary>
+        /// Control imgpopup.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ImageButton imgpopup;
+
+        /// <summary>
+        /// Control calendarextender1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::AjaxControlToolkit.CalendarExtender calendarextender1;
+
+        /// <summary>
+        /// Control rfvfechanac.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvfechanac;
+
+        /// <summary>
         /// Control btnAceptar.
         /// </summary>
         /// <remarks>
